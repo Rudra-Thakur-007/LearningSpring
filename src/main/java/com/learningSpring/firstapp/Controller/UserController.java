@@ -9,17 +9,19 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.learningSpring.firstapp.UserServiceImpl.ServiceImpl;
 import com.learningSpring.firstapp.entity.User;
 @RestController
+@RequestMapping("/user")
 public class UserController {
 	
 	@Autowired
-	ServiceImpl userService;
+	private ServiceImpl userService;
 	
-	@PostMapping("/regis")
+	@PostMapping("/register")
 	public User createUser(@RequestBody User user) {
 		return userService.createUser(user);
 	}
