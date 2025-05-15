@@ -1,0 +1,59 @@
+@charset "UTF-8";
+body
+{
+background-image: url('../images/lordvoldemort1.jpg');
+}
+#mymenu
+{
+	background-color:black;
+	color:white;
+	text-align:right;
+}
+#mymenu ul li
+{
+	display:inline-block;
+	padding:20px;
+}
+
+#mymenu ul li:hover
+{
+	display:inline-block;
+	padding:20px;
+	background:white;
+	color:black;
+}
+table
+{
+	margin-top:100px;
+	background-color:rgba(0,0,0,0.5);
+	color:white;
+	box-shadow:15px 15px 15px white;
+
+}
+.B
+{
+	background:linear-gradient(red,black);
+	color:white;
+	border-radius:20px 0px 20px 0px;
+	padding:15px;
+}
+.B:hover
+{
+	background:linear-gradient(black,red);
+	color:white;
+	border-radius:0px 20px 0px 20px;
+	padding:15px;
+	
+}
+
+.A
+{
+	border-radius:20px;
+}
+.link
+{
+	text-decoration:none;
+}
+
+
+	
